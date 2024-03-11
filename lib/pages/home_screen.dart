@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:image_processing/config/app_routes.dart';
 import 'package:image_processing/provider/predict_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -17,6 +18,8 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   final ImagePicker _picker = ImagePicker();
+  String? className;
+  double? score;
   File? _image;
 
   Widget logo() {
@@ -35,9 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
         EasyLoading.show(status: "Predict image...");
         var res = await predictImage(image);
+        className = res['className'];
+        score = res['score'];
         EasyLoading.dismiss();
-        print("reach");
-        print(res);
 
         setState(() {
           _image = image;
@@ -46,6 +49,23 @@ class _HomeScreenState extends State<HomeScreen> {
     } catch (e) {
       print(e);
       EasyLoading.dismiss();
+    }
+  }
+
+  void pushDetailRoute() {
+    var classNameLowerCase = className!.toLowerCase();
+    if (classNameLowerCase.contains('borer')) {
+      Navigator.of(context).pushNamed(AppRoutes.berryBorrer);
+    } else if (classNameLowerCase.contains('catterpillar')) {
+      Navigator.of(context).pushNamed(AppRoutes.catterpillar);
+    } else if (classNameLowerCase.contains('rust')) {
+      Navigator.of(context).pushNamed(AppRoutes.leafRust);
+    } else if (classNameLowerCase.contains('spot')) {
+      Navigator.of(context).pushNamed(AppRoutes.leafBerrySpot);
+    } else if (classNameLowerCase.contains('mold')) {
+      Navigator.of(context).pushNamed(AppRoutes.sootyMold);
+    } else if (classNameLowerCase.contains('insect')) {
+      Navigator.of(context).pushNamed(AppRoutes.scaleInsect);
     }
   }
 
@@ -90,6 +110,23 @@ class _HomeScreenState extends State<HomeScreen> {
                       _image!,
                       fit: BoxFit.cover,
                     ),
+            ),
+            Positioned(
+              top: 20,
+              left: 50,
+              right: 50,
+              child: className != null
+                  ? ElevatedButton(
+                      onPressed: () {
+                        pushDetailRoute();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black,
+                        padding: const EdgeInsets.all(14),
+                      ),
+                      child: Text("$className $score"),
+                    )
+                  : Container(),
             ),
             //Button to click pic
             Positioned(
