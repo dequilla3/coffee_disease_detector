@@ -1,9 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:image_processing/pages/home_screen.dart';
+import 'package:image_processing/config/app_routes.dart';
+import 'package:image_processing/provider/predict_provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider<PredictProvider>(
+          create: (context) => PredictProvider(),
+        ),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -14,12 +25,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Image Processing',
-      builder: EasyLoading.init(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
         colorScheme: ColorScheme.fromSwatch(),
       ),
-      home: const HomeScreen(),
+      initialRoute: '/',
+      routes: AppRoutes.routes,
+      builder: EasyLoading.init(),
     );
   }
 }
