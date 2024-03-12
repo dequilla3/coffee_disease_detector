@@ -35,8 +35,6 @@ abstract class ServiceBase<T> {
     File? file,
     String? token,
   }) async {
-    print('${AppConfig.baseUrl}/$apirUrl');
-
     var request = http.MultipartRequest(
       'POST',
       _getV1Url(apirUrl),
