@@ -2,14 +2,13 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import 'package:image_processing/config/app_config.dart';
+import 'package:image_processing/config/app_url.dart';
 
 abstract class ServiceBase<T> {
+  String? baseUrl = AppUrl.getBaseUrl();
   Future<T> call();
-
-  Uri url(String url) => Uri.http(AppConfig.baseUrl, url);
-
-  Uri _getV1Url(String url) => Uri.parse('${AppConfig.baseUrl}/$url');
+  Uri url(String url) => Uri.http(baseUrl!, url);
+  Uri _getV1Url(String url) => Uri.parse('$baseUrl/$url');
 
   Future<Map<String, dynamic>> get(String apiUrl, String? token) async {
     return _handleResponse(await MyRequest(token).get(_getV1Url(apiUrl)));
@@ -35,12 +34,12 @@ abstract class ServiceBase<T> {
     File? file,
     String? token,
   }) async {
-    print('${AppConfig.baseUrl}/$apirUrl');
-
     var request = http.MultipartRequest(
       'POST',
       _getV1Url(apirUrl),
     );
+
+    print(baseUrl);
 
     Map<String, String> headers = {"Content-type": "multipart/form-data"};
     request.files.add(await http.MultipartFile.fromPath(
