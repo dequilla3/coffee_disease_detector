@@ -5,8 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:image_processing/components/app_text_field.dart';
 import 'package:image_processing/config/app_routes.dart';
+import 'package:image_processing/config/app_url.dart';
 import 'package:image_processing/provider/predict_provider.dart';
+import 'package:image_processing/style/app_colors.dart';
+import 'package:localstore/localstore.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -17,8 +21,13 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final serverIpController = TextEditingController();
   final ImagePicker _picker = ImagePicker();
   List<dynamic> models = [];
+  final db = Localstore.instance;
+
+  String? className;
+  double? score;
   File? _image;
 
   Widget logo() {
@@ -103,9 +112,33 @@ class _HomeScreenState extends State<HomeScreen> {
     return await context.read<PredictProvider>().predictImage(image);
   }
 
+  void loadIps() async {
+    EasyLoading.show(status: "Initializing . . .");
+    final items = await db.collection('ips').get();
+    if (items != null) {
+      var baseIp = items['/ips/ips']['baseIp'];
+      serverIpController.text = baseIp;
+      AppUrl.setBaseUrl(baseIp);
+    }
+    EasyLoading.dismiss();
+  }
+
+  saveIp() async {
+    EasyLoading.show(status: "Saving IP. . .");
+
+    await db.collection('ips').doc("ips").set({
+      'baseIp': serverIpController.text,
+    });
+
+    AppUrl.setBaseUrl(serverIpController.text);
+
+    EasyLoading.dismiss();
+  }
+
   @override
   void initState() {
     super.initState();
+    loadIps();
     EasyLoading.dismiss();
   }
 
@@ -179,6 +212,71 @@ class _HomeScreenState extends State<HomeScreen> {
                       padding: const EdgeInsets.all(14),
                     ),
                     child: const FaIcon(FontAwesomeIcons.image),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      showModalBottomSheet<void>(
+                        context: context,
+                        isScrollControlled: true,
+                        builder: (BuildContext context) {
+                          return Container(
+                              color: const Color.fromRGBO(0, 0, 0, 0),
+                              child: Container(
+                                decoration: const BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.only(
+                                      topLeft: Radius.circular(22),
+                                      topRight: Radius.circular(22),
+                                    )),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(20),
+                                  child: Column(
+                                    children: [
+                                      const SizedBox(height: 12),
+                                      const Text(
+                                        "Setup Server",
+                                        style: TextStyle(fontSize: 24),
+                                      ),
+                                      const SizedBox(height: 12),
+                                      AppTextField(
+                                        hint: "Base URL Server IP",
+                                        controller: serverIpController,
+                                      ),
+                                      const SizedBox(height: 12),
+                                      SizedBox(
+                                        height: 40,
+                                        width: double.infinity,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            try {
+                                              saveIp();
+                                              Navigator.pop(context);
+                                            } catch (e) {
+                                              print(e);
+                                            }
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            backgroundColor: AppColors.primary,
+                                            foregroundColor:
+                                                const Color.fromARGB(
+                                                    255, 255, 255, 255),
+                                          ),
+                                          child: const Text('Save'),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ));
+                        },
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.green,
+                      shape: const CircleBorder(),
+                      padding: const EdgeInsets.all(14),
+                    ),
+                    child: const FaIcon(FontAwesomeIcons.server),
                   ),
                 ],
               ),
