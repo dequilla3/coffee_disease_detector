@@ -23,6 +23,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final serverIpController = TextEditingController();
   final ImagePicker _picker = ImagePicker();
+  List<dynamic> models = [];
   final db = Localstore.instance;
 
   String? className;
@@ -31,6 +32,37 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget logo() {
     return Center(child: Image.asset("assets/icon/coffee-cup.jpg"));
+  }
+
+  List<Widget> buttonPredicted() {
+    List<ElevatedButton> elevatedButtons = [];
+    elevatedButtons = [];
+    for (var model in models) {
+      var className = model['className'];
+      var score = model['score'];
+      if (score > 0) {
+        elevatedButtons.add(
+          ElevatedButton(
+            onPressed: () {
+              pushDetailRoute(className);
+            },
+            style: ElevatedButton.styleFrom(
+              foregroundColor: Colors.white,
+              backgroundColor: Colors.blue.withOpacity(0.5),
+              padding: const EdgeInsets.all(10),
+              minimumSize: const Size(180, 30),
+              side: const BorderSide(
+                color: Colors.black, // Specify the border color
+                width: 0.3, // Specify the border width
+              ),
+            ),
+            child: Text("$className $score"),
+          ),
+        );
+      }
+    }
+    // return elevatedButtons;
+    return elevatedButtons;
   }
 
   Future pickImage(ImageSource imageSource) async {
@@ -45,8 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         EasyLoading.show(status: "Predict image...");
         var res = await predictImage(image);
-        className = res['className'];
-        score = res['score'];
+        models = res['models'];
         EasyLoading.dismiss();
 
         setState(() {
@@ -59,9 +90,10 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  void pushDetailRoute() {
-    var classNameLowerCase = className!.toLowerCase();
-    if (classNameLowerCase.contains('borer')) {
+  void pushDetailRoute(String className) {
+    var classNameLowerCase = className.toLowerCase();
+    if (classNameLowerCase.contains('borer') ||
+        classNameLowerCase.contains('borrer')) {
       Navigator.of(context).pushNamed(AppRoutes.berryBorrer);
     } else if (classNameLowerCase.contains('catterpillar')) {
       Navigator.of(context).pushNamed(AppRoutes.catterpillar);
@@ -144,18 +176,10 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Positioned(
               top: 20,
-              left: 50,
-              right: 50,
-              child: className != null
-                  ? ElevatedButton(
-                      onPressed: () {
-                        pushDetailRoute();
-                      },
-                      style: ElevatedButton.styleFrom(
-                        foregroundColor: Colors.black,
-                        padding: const EdgeInsets.all(14),
-                      ),
-                      child: Text("$className $score"),
+              left: 10,
+              child: models.isNotEmpty
+                  ? Column(
+                      children: buttonPredicted(),
                     )
                   : Container(),
             ),
