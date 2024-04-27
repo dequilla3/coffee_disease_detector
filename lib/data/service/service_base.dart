@@ -39,8 +39,6 @@ abstract class ServiceBase<T> {
       _getV1Url(apirUrl),
     );
 
-    print(baseUrl);
-
     Map<String, String> headers = {"Content-type": "multipart/form-data"};
     request.files.add(await http.MultipartFile.fromPath(
       'image',

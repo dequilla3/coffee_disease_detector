@@ -63,7 +63,7 @@ class ScaleInsect extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                detailsSubTitle('SCALE INSECT'),
+                diseaseTitle('SCALE INSECT'),
                 details(
                     "Scales insect may feed on host plants (draining nutrients), transit diseases and become especially problematic when they excrete large quantities of wax. High infestations may also be associated with 'Black sooty mold which is powdery yet sticky, this is the most obvious symptom of major scale infestation."),
                 detailsSubTitle('Symptoms'),
