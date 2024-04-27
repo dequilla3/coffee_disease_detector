@@ -63,30 +63,47 @@ class ScaleInsect extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                diseaseTitle('SCALE INSECT'),
+                detailsSubTitle('SCALE INSECT'),
                 details(
-                    'Scales insect may feed on host plants (draining nutrients), transit diseases and become especially problematic when they excrete large quantities of wax. High infestations may also be associated with "Black sooty mold which is powdery yet sticky, this is the most obvious symptom of major scale infestation.\n'),
+                    "Scales insect may feed on host plants (draining nutrients), transit diseases and become especially problematic when they excrete large quantities of wax. High infestations may also be associated with 'Black sooty mold which is powdery yet sticky, this is the most obvious symptom of major scale infestation."),
                 detailsSubTitle('Symptoms'),
                 details(
-                    '•	Scales or shell-like bumps on plant stems and the underside of leaves. These are the outer coverings of scale insect.\n\n•	Large populations may result in poor growth.\n\n•	Some species of scale insect excrete honeydew, which accumulates on the upper leaf surfaces. This can be colonized by a black non-parasitic fungus known as sooty mold.\n\n•	Some scale insects deposit their eggs under a covering of white waxy fibers in early summer.\n'),
-                detailsSubTitle('Some Causes'),
+                    '• Exhibits shell-like bumps on plant stems and leaves.\n'
+                    '• Large populations can lead to poor growth.\n'
+                    '• Excretes honeydew on upper leaf surfaces, colonized by sooty mold.\n'
+                    '• Eggs deposited under white waxy fibers in early summer.'),
+                detailsSubTitle('Causes'),
                 details(
-                    'Scale insects suck the sap out of plants which causes deformed leaves, yellowing leaves, brown marks, and will cause them to eventually fall off if not treated in time. The appearance of sooty mold is another primary sign that indicates scale on plants.\n'),
-                detailsSubTitle('Some Control'),
+                    '• Suck sap, causing deformed, yellowing, browning leaves.\n'
+                    '• Potential for plant death if untreated.\n'
+                    '• Sooty mold appearance as primary sign of scale.'),
+                detailsSubTitle('Control'),
                 details(
-                    'Check susceptible plants frequently from spring onwards so action can be taken before a damaging population has developed. When choosing control options you can minimize harm to non-target animals by starting with the methods in the non-pesticide control section. If this is not sufficient to reduce the damage to acceptable levels then you may choose to use pesticides.\n'),
+                    '• Regularly check susceptible plants from spring to prevent damaging population.\n'
+                    '• Start non-pesticide control methods to minimize harm to non-target animals.\n'
+                    '• If non-control methods don\'t reduce damage, consider using pesticides.'),
                 detailsSubTitle('Cultural Treatment'),
-                details(
-                    'Monitor:\n\nMonitor plants for scale presence in spring, as no insecticide is effective once soft or hard shells form; wash and spray when insects are most vulnerable.\n\nUse water:\n\nUse a gentle hose blast to dislodge minor infestations, dispose of them in soapy water, and wipe down sooty mold-emitting leaves or stems.\n'),
+                details('• Monitor plants for scale presence in spring.\n'
+                    '• Wash and spray when insects are most vulnerable.\n'
+                    '• Use gentle hose blast to dislodge minor infestations.\n'
+                    '• Dispose of infestations in soapy water.'),
                 detailsSubTitle('Physical/Mechanical Treatment'),
-                details(
-                    'Prune branches: \nCut out the most heavily infested branches or stems and discard in the garbage or yard debris bin. Don’t compost affected plant material.\n'),
+                details('• Cut heavily infested branches or stems.\n'
+                    '• Discard in garbage or yard debris bin.\n'
+                    '• Avoid composting affected plant material.'),
                 detailsSubTitle('Biological Treatment'),
                 details(
-                    'Grow a variety of flowering plants to help attract and support natural enemies. Adults of predatory bugs, lacewings, lady beetles, and parasitic wasps live longer, lay more eggs, and kill more scales when they have plant nectar or pollen and insect honeydew to feed on.\n'),
+                    '• Attract predatory bugs, lacewings, lady beetles, parasitic wasps.\n'
+                    '• Support longer life, egg lay, and scale killing with nectar, pollen, and honeydew.'),
                 detailsSubTitle('Chemical Treatment'),
                 details(
-                    'If chemical controls are used, they should be used only in a minimal and highly targeted manner.\n\n•	Organic sprays, such as natural pyrethrum or plant oils can give good control of scale insect nymphs. These pesticides have a very short persistence and so may require reapplication to keep scale numbers in check. Plant oil products are less likely to affect larger insects such as ladybird adults \n\n•	Plant invigorators combine nutrients to stimulate plant growth with surfactants or fatty acids that have a physical mode of action These are not considered organic.•	To grow well, plants need a wide range of nutrients in various amounts, depending on the individual plant and its stage of growth. The three key plant nutrients usually derived from soil are nitrogen, phosphorus and potassium, while carbon, oxygen and hydrogen are absorbed from the air. Other vital soil nutrients include magnesium, calcium and sulphur. Farmers can add nutrients by applying fertilizers to boost plant growth and improve flowering and fruiting.\n\n•	nutrients to stimulate plant growth with surfactants or fatty acids that have a physical mode of action. These are not considered organic.\n\n•	More persistent contact-action insecticides include the synthetic pyrethroids lambda-cyhalothrin, deltamethrin and cypermethrin \n\n•	A systemic containing the active ingredient Flupyradifurone is available for use on ornamentals and selected edibles\n\n•	The systemic neonicotinoid insecticide acetamiprid is also available.\n'),
+                    'If chemical controls are used, they should be used only in a minimal and highly targeted manner.\n'
+                    '• Organic sprays like natural pyrethrum or plant oils control scale insect nymphs but require reapplication.\n'
+                    '• Plant invigorators stimulate plant growth with physical surfactants or fatty acids.\n'
+                    '• Plants require a wide range of nutrients, including nitrogen, phosphorus, potassium, carbon, oxygen, hydrogen, magnesium, calcium, and sulphur.\n'
+                    '• Fertilizers can add nutrients to boost plant growth and improve flowering and fruiting.\n'
+                    '• Synthetic pyrethroids lambda-cyhalothrin, deltamethrin, and cypermethrin are more persistent contact-action insecticides.\n'
+                    '• Systemic insecticides like Flupyradifurone and acetamiprid are available for ornamentals and edibles.')
               ],
             ),
           ),

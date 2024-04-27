@@ -63,30 +63,43 @@ class Catterpillar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                diseaseTitle('CATERPILLAR INFESTATION'),
+                detailsSubTitle('CATERPILLAR INFESTATION'),
                 details(
-                    'Caterpillars are varied in name as some are called loopers or worms (i.e. cabbage loopers, hornworms and inchworms), and are one of the most common pests that can attack coffee tree plants. These insects can cause significant damage to the leaves and stems of the plant, which can ultimately lead to a decrease in yield. \n'),
+                    "Caterpillars are varied in name as some are called loopers or worms (i.e. cabbage loopers, hornworms and inchworms), and are one of the most common pests that can attack coffee tree plants. These insects can cause significant damage to the leaves and stems of the plant, which can ultimately lead to a decrease in yield."),
                 detailsSubTitle('Symptoms'),
-                details(
-                    'Some are actually soil pests such as cutworms, while other are called borers, but one fact remains that they are always moth or butterfly larvae and can be extremely destructive.\n'),
-                detailsSubTitle('Some Causes'),
-                details(
-                    'You end up with caterpillars mainly because butterflies lay their eggs on or near your plants. Like many valuable species in nature, butterfly instincts help them locate the safest spot conducive to reproduction.\n'),
-                detailsSubTitle('Some Control'),
-                details(
-                    'You can squish the larvae or drop them into soapy water to destroy them, or they may choose to locate them to another part of the yard. Caterpillars are unlikely to return to the affected plant as long as theyve been moved far enough away. Prune off rolled or webbed leaves in trees if you can reach them.\n'),
+                details('• Cutworms: Soil pests.\n'
+                    '• Borers: Borers.\n'
+                    '• Moth or butterfly larvae.\n'
+                    '• Destructive nature.'),
+                detailsSubTitle('Causes'),
+                details('• Caterpillars found near plants.\n'
+                    '• Butterfly instincts aid in locating safe reproduction spots.'),
+                detailsSubTitle('Control'),
+                details('• Squish larvae or drop into soapy water.\n'
+                    '• Caterpillars may relocate to another yard.\n'
+                    '• Move away from affected plants.\n'
+                    '• Prune off rolled or webbed leaves in trees.'),
                 detailsSubTitle('Cultural Treatment'),
                 details(
-                    'Hand removal is the most effective and straightforward way to remove caterpillars quickly. \n\nDrop them into a bucket of soapy water to get rid of them.\n\nHomemade Solutions Pepper spray: \n\na)	You can kill caterpillars with fresh peppers. Wear gloves and eye protection and finely chop enough habanero peppers to fill 1/2 cup. Crush six garlic cloves. Puree the peppers and garlic with 2 cups of water, 1 tablespoon of vegetable oil, and 1 teaspoon of dish soap in the blender. Pour the mixture into a quart glass jar and cap it tightly. Set it in direct sun for two days. Strain the pepper solution through a coffee filter into a spray bottle. Spray caterpillars generously.\n\nb)	Molasses and dish soap: Mix a tablespoon of molasses and a teaspoon of dish soap with a liter of warm water. Once room temperature, spray the mix regularly over the leaves, top to bottom.\n\nc)	Oil spray: This stripped-down version of pepper spray is ready faster and with fewer ingredients; combine 2 tablespoons of canola oil (or any vegetable oil), 1 teaspoon of dish soap, and 2 cups of warm water. Funnel the solution into a spray bottle and spritz caterpillars liberally. Dont use this on orchids, squashes, or hairy-leafed plants.\n\nd)	Vinegar spray: A vinegar and water solution will kill and repel most garden pests, including caterpillars. Mix two tablespoons of vinegar with 1 gallon of water, and spray wherever youve seen caterpillars.\n'),
+                    '• Hand removal: Quick and effective way to kill caterpillars.\n'
+                    '• Homemade Solutions: Pepper spray: Mix fresh habanero peppers, garlic, water, vegetable oil, and dish soap. Spray caterpillars generously.\n'
+                    '• Molasses and dish soap: Mix molasses and dish soap with warm water. Spray on leaves.\n'
+                    '• Oil spray: Faster and simpler version of pepper spray. Use on canola oil, dish soap, and water.\n'
+                    '• Vinegar spray: Kills and repels most garden pests, including caterpillars. Mix vinegar and water.'),
                 detailsSubTitle('Physical/Mechanical Treatment'),
-                details(
-                    'Relocate or remove plants that are known hosts, if possible. Vacuum caterpillars off plants and dump the vacuum container in a bucket of soapy water.\n'),
+                details('• Relocate known hosts.\n'
+                    '• Vacuum caterpillars.\n'
+                    '• Dump vacuum container in soapy water.'),
                 detailsSubTitle('Biological Treatment'),
-                details(
-                    'Bacillus thuringiensis spp. kurstaki, (MOA 11A) (BTK) (Dipel DF, Deliver, Javelin, Thuricide N/G) is most effective against the young, feeding larvae. The caterpillars must consume this bacterium for it to be effective, so thorough spray coverage is needed.\n'),
+                details('Bacillus thuringiensis spp. kurstaki (MOA 11A) (BTK)\n'
+                    '• Targets young, feeding larvae.\n'
+                    '• Requires thorough spray coverage for effectiveness.'),
                 detailsSubTitle('Chemical Treatment'),
-                details(
-                    'Spray Neem Oil:\nNeem oil sprays, a botanical extract from Neem tree seeds, kill small insect pests like caterpillars and mites through suffocation, affecting caterpillars by stunting their maturation. These commercially sold sprays are safe and harmless for humans and pets.\n'),
+                details('Neem Oil Spray\n'
+                    '• Botanical extract from Neem tree seeds.\n'
+                    '• Kills small insect pests like caterpillars and mites.\n'
+                    '• Stimulates caterpillar maturation.\n'
+                    '• Safe and harmless for humans and pets.')
               ],
             ),
           ),

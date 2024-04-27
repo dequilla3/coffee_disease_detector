@@ -68,25 +68,42 @@ class LeafRust extends StatelessWidget {
                     'Coffee Leaf Rust or Hemileia vastratix (also called bu its spanish name, “Roya”) has severely damaged many coffee growing areas worldwide.\n'),
                 detailsSubTitle('Symptoms'),
                 details(
-                    'The symptoms of coffee rust include small, yellowish, oily spots on the upper leaf surface that expand into larger round spots that turn bright orange to red and finally brown with a yellow border. The rust pustules are powdery and orange-yellow on the underleaf surface. Later the pustules turn black.\n'),
+                    '• Small, yellowish, oily spots on upper leaf surface.\n• Expand into larger, round spots.\n• Turn bright orange to red, brown, with yellow border.\n• Powdery, orange-yellow rust pustules on underleaf surface.\n• Later, turn black.\n'),
                 detailsSubTitle('Some Causes'),
+                details('• Fungal Disease: Causes premature leaf fall.\n'
+                    '• Temperature Influence: Temperature variations significantly affect infestation rates.\n'
+                    '• Elevation Impact: Higher elevations typically show less infestation.'),
+                detailsSubTitle('Control'),
                 details(
-                    'Rust is a fungal disease, causing premature leaf fall. It is thought that coffee rust is affected by temperature. Higher elevation (cooler), show less infestation that lower attitude (warmer). \n'),
-                detailsSubTitle('Some Control'),
-                details(
-                    'In higher attitudes where the temperature is cooler, two (2) copper sprays are recommended per year. \n\nIn the lower areas where the temperature is warmer but with high humidity and plenty of rainfall, three to four (3-4) sprays, depending on the weather\n\nPreventive sprays need to be applied before any symptoms apprear.\n a.	Copper sulfate is a preventive spray. \n b.	Triademifon is a systemic curative spray.\n'),
+                    '• Recommended in Cooler Areas: Two copper sprays per year.\n'
+                    '• Recommended in Warmer, Humid Areas: Three to four sprays, especially with high humidity and rainfall.\n'
+                    '• Preventive Sprays: Copper sulfate and Triademifon.'),
                 detailsSubTitle('Cultural Treatment'),
-                details(
-                    'Maintaining healthy plants and good sanitation practices\n\nRemoving weeds that may compete with the coffee plant for nutrients or stress the coffee plants. This also contributes to maintaining tree health.\n\nPruning, which increases air flow through the trees and reduces humidity.\n\nRemoving plants that are weak, old or already affected by other diseases or pests.\n'),
+                details('• Maintaining healthy plants and sanitation.\n'
+                    '• Removing weeds for nutrient competition and stress relief.\n'
+                    '• Pruning for increased air flow and humidity reduction.\n'
+                    '• Removing weak, old, or diseased plants.'),
                 detailsSubTitle('Physical/Mechanical Treatment'),
                 details(
                     'Checking with your local agricultural advisory (extension) agent for recommended practices. Do this before applying any plant protection products.\n'),
+                detailsSubTitle('Physical/Mechanical Treatment'),
+                details(
+                    '"Check local agricultural advisory for recommended practices before applying plant protection products."'),
                 detailsSubTitle('Biological Treatment'),
                 details(
-                    'Biopesticides and essential oils can reduce coffee rust damage by up to 97%, promoting plant defense and disease resistance. These products, including plant extracts, also show promising results in disease management.The use of essential oils such as cinnamon, citronella, lemongrass, cloves, tea tree, thyme and eucalyptus has also shown promising results in coffee rust management.\n\nTwo types of fungi are known to be particularly important for coffee leaf rust:\n\n1.Mycoparasitic fungi which “eat” other fungi such as coffee leaf rust.\n2.Fungi capable of living inside the tissue of the coffee plant and working as bodyguards.\n\nThey protect the plant against attacks by diseases like rust. Both types of beneficial organisms might be exploited on coffee farms as sustainable tools for managing coffee leaf rust. There are several bacterial groups that form beneficial associations with plants. These mainly belong to the bacterial groups Bacillus and Pseudomonas. These bacteria can benefit the coffee plants in three main ways: \n\na)	Competing for space or nutrients because many bacteria live both within and on tissues of plants. This prevents germination and/or the development of the fungus causing coffee rust. \n\nb)	Producing antimicrobial compounds that can attack the cell walls of the coffee rust fungi.\n\nc)	Inducing systemic resistance to the rust. Systemic resistance in plants is a resistance mechanism that is activated by a prior infection.\n'),
+                    '• Biopesticides and essential oils can reduce coffee rust damage by up to 97%. '
+                    '• Essential oils like cinnamon, citronella, lemongrass, cloves, tea tree, thyme, and eucalyptus show promising results in disease management. '
+                    '• Mycoparasitic fungi and fungi living inside the coffee plant\'s tissue are crucial for managing coffee leaf rust. '
+                    '• Bacterial groups Bacillus and Pseudomonas form beneficial associations with plants, preventing germination and development of rust-causing fungi. '
+                    '• Bacterial groups can produce antimicrobial compounds that can attack rust fungi\'s cell walls and induce systemic resistance.'),
                 detailsSubTitle('Chemical Treatment'),
                 details(
-                    'Note: The use of chemical fungicides can come with some issues, such as:  \n\nHigh cost of the products. Continuous and repetitive use may promote the selection of rust populations that are resistant to fungicides. So far, chemical control of coffee rust relies on only two chemical groups, which makes the products losing efficiency more probable.\n\nResidues can prevent growers from the high-value organic coffee market. This is particularly true with systemic fungicides. These are fungicides that are absorbed into the plant.\n\nActive ingredients in fungicides may bring harm to the environment and humans.'),
+                    'Note: The use of chemical fungicides can come with some issues, such as: '
+                    '• High product costs. '
+                    '• Repetitive use may lead to rust populations resistant to fungicides. '
+                    '• Existing chemical control relies on two chemical groups, increasing efficiency. '
+                    '• Residuals can hinder organic coffee market access, especially with systemic fungicides. '
+                    '• Active ingredients in fungicides can harm the environment and humans.'),
               ],
             ),
           ),

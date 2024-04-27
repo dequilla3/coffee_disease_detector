@@ -65,28 +65,38 @@ class SootyMold extends StatelessWidget {
               children: [
                 diseaseTitle('SOOTY MOLD'),
                 details(
-                    'The sooty molds are saprobic ascomycetes belonging to several different families of Dothideales. Sooty molds use the honeydew secreted by plants or sap-sucking insects, such as aphids and scale.\n'),
+                    'The sooty molds are saprobic ascomycetes belonging to several different families of Dothideales.\n'
+                    'Sooty molds use the honeydew secreted by plants or sap-sucking insects, such as aphids and scale.'),
                 detailsSubTitle('Symptoms'),
+                details('• Splotchy black stains on leaves, stems, fruit.'),
+                detailsSubTitle('Causes'),
                 details(
-                    'Sooty mold is identified by splotchy black stains or coatings on leaves, stems, and fruit.\n'),
-                detailsSubTitle('Some Causes'),
-                details(
-                    'The black residue of sooty mold is made up of dark fungal threads of several ascomycetes, such as species of Alternaria, Capnodium, Cladosporium, Fumago, and Scorias. These fungi grow in flowing sap or on honeydew excreted by aphids and other sucking insects.\n'),
-                detailsSubTitle('Some Control'),
-                details(
-                    'Control measures include dusting or spraying for sucking insects, clearing sticky coatings of sap or honeydew on plant surfaces, and avoiding wounding plants.\n'),
+                    '• Comprises dark fungal threads of Alternaria, Capnodium, Cladosporium, Fumago, Scorias.\n'
+                    '• Grows in sap or honeydew excreted by aphids and insects.'),
+                detailsSubTitle('Control'),
+                details('• Dusting or spraying for sucking insects.\n'
+                    '• Clearing sticky sap/honeydew coatings.\n'
+                    '• Avoiding plant wounds.'),
                 detailsSubTitle('Cultural Treatment'),
-                details(
-                    'eco-oil and eco-neem will both control a broad range of sap-sucking insects. Spray with either a couple of times to kill the pests. Ensure good coverage all over the plants so you dont miss any of the pests. Once the sooty mould starts to dry and flake hosing can help to remove the flaky bits faster.\n'),
+                details('Eco-Oil and Eco-Neem Control for Plants\n'
+                    '• Controls broad range of sap-sucking insects.\n'
+                    '• Sprays multiple times for effective pest control.\n'
+                    '• Ensures complete plant coverage.\n'
+                    '• Uses flake hosing for faster removal of flaky bits.'),
                 detailsSubTitle('Physical/Mechanical Treatment'),
-                details(
-                    'First control the aphids, scales or other pests that are creating the honeydew.\n\nAphids can often be washed off by a strong spray of water from the hose. \n\nThis action may also wash off some of the "honeydew" and sooty mould.\n\nRemaining sooty mould will eventually dry up and flake off the leaves.\n'),
+                details('• Control pests like aphids, scales.\n'
+                    '• Wash aphids with hose spray.\n'
+                    '• Wash off honeydew and sooty mould.\n'
+                    '• Sooty mould will dry up and flake off leaves.'),
                 detailsSubTitle('Biological Treatment'),
                 details(
-                    'Sooty moulds are surface contaminants - that grow on honeydew excreted by sap-sucking insects. These insects shed droplets of honeydew onto surfaces below where they feed, such as leaves, stems, branches, and fruit. Honeydew contains high sugars and nutrients, which the sooty mould fungi use for growth. Sooty mould growth is most prevalent in poor air circulation and high humidity, providing extended wetness. Occasionally, sooty mould growth develops on sugary, sticky exudates produced by the plants leaves, with certain species like Cistus being more likely to produce such exudates.\n'),
+                    '• Surface contaminants that grow on honeydew excreted by sap-sucking insects.\n'
+                    '• Use high sugars and nutrients from honeydew for growth.\n'
+                    '• Prevalence in poor air circulation and high humidity.\n'
+                    '• Growth can also occur on sugary, sticky exudates from plant leaves, with Cistus species more likely.'),
                 detailsSubTitle('Chemical Treatment'),
-                details(
-                    'Shell white oil/Orchard oil at 4 litres per 200 litres of water is also effective. \n'),
+                details('Shell White/Orchard Oil\n'
+                    '• 4 litres per 200 litres of water.')
               ],
             ),
           ),

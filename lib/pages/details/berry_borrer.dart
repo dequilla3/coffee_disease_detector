@@ -65,28 +65,41 @@ class BerryBorrer extends StatelessWidget {
               children: [
                 diseaseTitle('COFFEE BERRY BORER (CBB)'),
                 details(
-                    'Coffee berry borer (CBB) is the most serious insect pest of coffee worldwide, causing more than US\$ 500M in damages annually. Reduction in the yield and quality of coffee results from the adult female CBB boring into the coffee fruit and building galleries for reproduction. Adult coffee berry borer beetles are black and about 1.5 mm long. Although it is difficult to see distinctive characteristics with the naked eye, short club shaped antenna and short stiff hairs covering the body can be seen under magnification. Many beetles can often be found in a single coffee berry.\n'),
+                    'Coffee berry borer (CBB) is the most serious insect pest of coffee worldwide, causing more than US\$500M in damages annually. Reduction in the yield and quality of coffee results from the adult female CBB boring into the coffee fruit and building galleries for reproduction. Adult coffee berry borer beetles are black and about 1.5 mm long. Although it is difficult to see distinctive characteristics with the naked eye, short club-shaped antenna and short stiff hairs covering the body can be seen under magnification. Many beetles can often be found in a single coffee berry.'),
                 detailsSubTitle('Symptoms'),
+                details('• First sign 8 weeks post-flowering.\n'
+                    '• Small, 1mm hole often visible.'),
+                detailsSubTitle('Causes'),
+                details('• Difficulty controlling borer inside coffee cherry.\n'
+                    '• Offspring can live inside bean until next season.\n'
+                    '• Short flight ability makes containment difficult.'),
+                detailsSubTitle('Control'),
                 details(
-                    'The first sign of coffee berry borer attack can be seen at the tip of the berry, around 8 weeks after flowering. A small hole about 1 mm big is often clearly visible.\n'),
-                detailsSubTitle('Some Causes'),
-                details(
-                    'It is difficult to control once the borer is inside the coffee cherry, destroying its integrity.\n\nThe offspring can live inside the bean until next season.\n\nThe ability for short flight makes containment very difficult.\n'),
-                detailsSubTitle('Some Control'),
-                details(
-                    '1.	Sanitation - Remove all coffee fruit, including fruit that is still on the tree, along with fruit that has fallen on the ground.\n\nNote: Transporting and handling infected beans contribute to 	the spread of the insect.\n'),
+                    '• Sanitation: Remove all infected coffee fruit, both on and off the tree.\n'
+                    '• CBB Trap: Create a homemade device using used water bottles and a lure filled with ethyl and methyl alcohol.\n'
+                    '• Deploy 20-30 traps per hectare.'),
                 detailsSubTitle('Cultural Treatment'),
                 details(
-                    'Control methods include collecting ripe and overripe berries, post-harvest sanitation, and pesticides, but ground collection is not always recommended due to labor shortages or uneconomic production costs.	During growth:To maintain a healthy berry tree, pick ripe berries as they ripen, increasing to every 2–3 weeks in hot spots.\n\nCollect blackened berries from the ground or bushes and burn them, leaving less than five ripe, overripe, or raisin berries per tree. For 3 months, remove all berries from the bushes and ground, and continually remove young berries.\n\nIf parasitoids are important, pick ripe berries every 2 weeks, leave fallen berries as a reservoir, and increase shade.\n\nMaintain healthy trees using the correct fertilizer, weed control, and pruning.\n\nAfter harvest:\n\nPrune bushes after harvest: (i) remove branches on which berries are too high to reach (keep bushes about 2 m high); (ii) cut out dead or dying branches; and (iii) keep stems to a maximum of four. Stumping is also recommended when trees are old, their yield has declined, or they are too tall to harvest easily.\n\nDo not leave any berries on the bushes; remove them, and also pick up fallen berries, boil them, and bury them.\n'),
-                detailsSubTitle('Physical/Mechanical Treatment'),
-                details(
-                    'Create a CBB Trap - This can be a homemade device effective in trapping the insect during flight periods.\n\na.	Cut open used water bottles\n\nb.	Equip with a lure filled with a 1:1 ratio of ethyl alcohol and methyl alcohol.\n\nc.	Deploy 20 to 30 traps per one (1) hecatre.\n'),
+                    '• During growth: Pick ripe berries as they ripen, increasing every 2-3 weeks in hot spots.\n'
+                    '• After harvest: Collect blackened berries, burn them, and remove all berries for 3 months.\n'
+                    '• If parasitoids are important, pick ripe berries every 2 weeks, leave fallen berries as a reservoir, and increase shade.\n'
+                    '• After harvest: Prune bushes, remove branches too high to reach, cut out dead or dying branches, and keep stems to a maximum of four.\n'
+                    '• Remove berries from bushes, pick up fallen berries, boil them, and bury them.'),
+                detailsSubTitle(
+                    'Physical/Mechanical Treatment: CBB Trap Creation'),
+                details('• Use cut-open water bottles.\n'
+                    '• Equip lure with 1:1 ethyl alcohol and methyl alcohol.\n'
+                    '• Deploy 20-30 traps per hectare.'),
                 detailsSubTitle('Biological Treatment'),
                 details(
-                    'CBB Biological Control - During the flight periods of the insect’s lifecycle, use the naturally-occuring (non-toxic) fungus Beauveria bassiana:\n\na.	Dilute the fungus with water.\n\nb.	Spray it on a regular basis (about every two (2) weeks) as the residual action does not last long. The insect (along with Stem Borer larvae, if any) will be killed once it comes into contact with the fugus.\n\nNote: This fungus is not toxic to humans or to the 	environment, but it is a non-selective “Biocon” agent and 	may infect other beneficial insects. \n'),
+                    '• Use Beauveria bassiana fungus during insect flight periods,\n'
+                    '• Dilute with water and spray regularly every two weeks,\n'
+                    '• Kill insects and Stem Borer larvae upon contact,\n'
+                    '• Non-toxic to humans and environment, but may infect other beneficial insects.'),
                 detailsSubTitle('Chemical Treatment'),
-                details(
-                    'CBB Chemical Control - Chemicals can be effective but it should be used as a last resort. When using chemical sprays, make sure to follow label directions. Alternate application of other fungicide brands so as not to build resistance. \n'),
+                details('• Use chemicals as last resort,\n'
+                    '• Follow label directions,\n'
+                    '• Alternate application of other fungicide brands.'),
               ],
             ),
           ),
