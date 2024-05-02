@@ -56,7 +56,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: 0.3, // Specify the border width
               ),
             ),
-            child: Text("$className $score"),
+            child: Text(
+                "${className.contains('Bery Spot') ? 'Leaf and Berry Spot' : className} $score"),
           ),
         );
       }
