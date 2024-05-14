@@ -64,15 +64,6 @@ class SootyMold extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 diseaseTitle('SOOTY MOLD'),
-                details(
-                    'The sooty molds are saprobic ascomycetes belonging to several different families of Dothideales.\n'
-                    'Sooty molds use the honeydew secreted by plants or sap-sucking insects, such as aphids and scale.'),
-                detailsSubTitle('Symptoms'),
-                details('• Splotchy black stains on leaves, stems, fruit.'),
-                detailsSubTitle('Causes'),
-                details(
-                    '• Comprises dark fungal threads of Alternaria, Capnodium, Cladosporium, Fumago, Scorias.\n'
-                    '• Grows in sap or honeydew excreted by aphids and insects.'),
                 detailsSubTitle('Control'),
                 details('• Dusting or spraying for sucking insects.\n'
                     '• Clearing sticky sap/honeydew coatings.\n'

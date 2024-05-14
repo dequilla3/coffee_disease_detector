@@ -64,19 +64,6 @@ class ScaleInsect extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 diseaseTitle('SCALE INSECT'),
-                details(
-                    "Scales insect may feed on host plants (draining nutrients), transit diseases and become especially problematic when they excrete large quantities of wax. High infestations may also be associated with 'Black sooty mold which is powdery yet sticky, this is the most obvious symptom of major scale infestation."),
-                detailsSubTitle('Symptoms'),
-                details(
-                    '• Exhibits shell-like bumps on plant stems and leaves.\n'
-                    '• Large populations can lead to poor growth.\n'
-                    '• Excretes honeydew on upper leaf surfaces, colonized by sooty mold.\n'
-                    '• Eggs deposited under white waxy fibers in early summer.'),
-                detailsSubTitle('Causes'),
-                details(
-                    '• Suck sap, causing deformed, yellowing, browning leaves.\n'
-                    '• Potential for plant death if untreated.\n'
-                    '• Sooty mold appearance as primary sign of scale.'),
                 detailsSubTitle('Control'),
                 details(
                     '• Regularly check susceptible plants from spring to prevent damaging population.\n'

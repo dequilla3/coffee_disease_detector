@@ -64,15 +64,6 @@ class LeafRust extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 diseaseTitle('COFFEE LEAF RUST (CLR)'),
-                details(
-                    'Coffee Leaf Rust or Hemileia vastratix (also called bu its spanish name, “Roya”) has severely damaged many coffee growing areas worldwide.\n'),
-                detailsSubTitle('Symptoms'),
-                details(
-                    '• Small, yellowish, oily spots on upper leaf surface.\n• Expand into larger, round spots.\n• Turn bright orange to red, brown, with yellow border.\n• Powdery, orange-yellow rust pustules on underleaf surface.\n• Later, turn black.\n'),
-                detailsSubTitle('Some Causes'),
-                details('• Fungal Disease: Causes premature leaf fall.\n'
-                    '• Temperature Influence: Temperature variations significantly affect infestation rates.\n'
-                    '• Elevation Impact: Higher elevations typically show less infestation.'),
                 detailsSubTitle('Control'),
                 details(
                     '• Recommended in Cooler Areas: Two copper sprays per year.\n'

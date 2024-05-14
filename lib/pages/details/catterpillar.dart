@@ -64,16 +64,6 @@ class Catterpillar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 diseaseTitle('CATERPILLAR INFESTATION'),
-                details(
-                    "Caterpillars are varied in name as some are called loopers or worms (i.e. cabbage loopers, hornworms and inchworms), and are one of the most common pests that can attack coffee tree plants. These insects can cause significant damage to the leaves and stems of the plant, which can ultimately lead to a decrease in yield."),
-                detailsSubTitle('Symptoms'),
-                details('• Cutworms: Soil pests.\n'
-                    '• Borers: Borers.\n'
-                    '• Moth or butterfly larvae.\n'
-                    '• Destructive nature.'),
-                detailsSubTitle('Causes'),
-                details('• Caterpillars found near plants.\n'
-                    '• Butterfly instincts aid in locating safe reproduction spots.'),
                 detailsSubTitle('Control'),
                 details('• Squish larvae or drop into soapy water.\n'
                     '• Caterpillars may relocate to another yard.\n'

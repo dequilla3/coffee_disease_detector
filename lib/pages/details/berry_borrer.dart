@@ -64,15 +64,6 @@ class BerryBorrer extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 diseaseTitle('COFFEE BERRY BORER (CBB)'),
-                details(
-                    'Coffee berry borer (CBB) is the most serious insect pest of coffee worldwide, causing more than US\$500M in damages annually. Reduction in the yield and quality of coffee results from the adult female CBB boring into the coffee fruit and building galleries for reproduction. Adult coffee berry borer beetles are black and about 1.5 mm long. Although it is difficult to see distinctive characteristics with the naked eye, short club-shaped antenna and short stiff hairs covering the body can be seen under magnification. Many beetles can often be found in a single coffee berry.'),
-                detailsSubTitle('Symptoms'),
-                details('• First sign 8 weeks post-flowering.\n'
-                    '• Small, 1mm hole often visible.'),
-                detailsSubTitle('Causes'),
-                details('• Difficulty controlling borer inside coffee cherry.\n'
-                    '• Offspring can live inside bean until next season.\n'
-                    '• Short flight ability makes containment difficult.'),
                 detailsSubTitle('Control'),
                 details(
                     '• Sanitation: Remove all infected coffee fruit, both on and off the tree.\n'
